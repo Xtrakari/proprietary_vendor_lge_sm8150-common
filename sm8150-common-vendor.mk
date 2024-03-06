@@ -1074,8 +1074,8 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     qti-telephony-common \
-    android.hardware.gnss@2.1-service-qti \
-    android.hardware.neuralnetworks@1.3-service-qti-hta \
-    android.hardware.neuralnetworks@1.3-service-qti \
-    vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.display.allocator-service
+    android.hardware.gnss@2.1-service-qti.xml \
+    android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
+    android.hardware.neuralnetworks@1.3-service-qti.xml \
+    vendor.qti.gnss@4.0-service.xml \
+    vendor.qti.hardware.display.allocator-service.xml
