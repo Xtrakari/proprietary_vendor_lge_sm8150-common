@@ -1084,8 +1084,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
-    vendor.qti.gnss@4.0-service.xml \
-    vendor.qti.hardware.display.allocator-service.xml
+    vendor.qti.gnss@4.0-service.xml
 
 PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink32 \
