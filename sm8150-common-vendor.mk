@@ -413,7 +413,6 @@ PRODUCT_PACKAGES += \
     vendor.display.postproc@1.0 \
     vendor.lge.hardware.powerhint.rescontrol@2.0-common \
     vendor.lge.hardware.powerhint.rescontrol@2.0 \
-    vendor.lge.hardware.radio@2.0 \
     vendor.lge.hardware.vss_ims@1.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
