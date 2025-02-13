@@ -760,15 +760,14 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/lge_qcci_data.so"],
-			shared_libs: ["libqmi_cci", "libqmi_common_so", "liblog", "libutils", "libvss_common_idl", "libqmi_client_helper", "libqmi", "libidl", "libqmiservices", "libqmi_client_qmux", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libqmi_cci", "libqmi_common_so", "liblog", "libutils", "libril", "libvss_common_idl", "libqmi_client_helper", "libqmi", "libidl", "libqmiservices", "libqmi_client_qmux", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lge_qcci_data.so"],
-			shared_libs: ["libqmi_cci", "libqmi_common_so", "liblog", "libutils", "libvss_common_idl", "libqmi_client_helper", "libqmi", "libidl", "libqmiservices", "libqmi_client_qmux", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libqmi_cci", "libqmi_common_so", "liblog", "libutils", "libril", "libvss_common_idl", "libqmi_client_helper", "libqmi", "libidl", "libqmiservices", "libqmi_client_qmux", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -3892,15 +3891,14 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libril-qc-qmi-1.so"],
-			shared_libs: ["libdsutils", "libcutils", "libutils", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libril-qcril-hook-oem", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libmdmdetect", "libperipheral_client", "libsettings", "liblog", "libhidlbase", "vendor.qti.hardware.radio.ims@1.0", "vendor.qti.hardware.radio.qcrilhook@1.0", "vendor.qti.hardware.radio.am@1.0", "vendor.qti.hardware.radio.qtiradio@1.0", "vendor.qti.hardware.radio.uim_remote_server@1.0", "vendor.qti.hardware.radio.uim_remote_client@1.0", "vendor.qti.hardware.radio.lpa@1.0", "vendor.qti.hardware.radio.uim@1.0", "vendor.qti.hardware.radio.uim@1.1", "android.hardware.secure_element@1.0", "android.hardware.radio.config@1.0", "android.hardware.radio@1.0", "vendor.qti.hardware.data.connection@1.0", "vendor.qti.hardware.data.connection@1.1", "libsystem_health_mon", "libpdmapper", "libpdnotifier", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpatchcodeid_vendor", "LGDataFeature_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libdsutils", "libcutils", "libutils", "libril", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libril-qcril-hook-oem", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libmdmdetect", "libperipheral_client", "libsettings", "liblog", "libhidlbase", "vendor.qti.hardware.radio.ims@1.0", "vendor.qti.hardware.radio.qcrilhook@1.0", "vendor.qti.hardware.radio.am@1.0", "vendor.qti.hardware.radio.qtiradio@1.0", "vendor.qti.hardware.radio.uim_remote_server@1.0", "vendor.qti.hardware.radio.uim_remote_client@1.0", "vendor.qti.hardware.radio.lpa@1.0", "vendor.qti.hardware.radio.uim@1.0", "vendor.qti.hardware.radio.uim@1.1", "android.hardware.secure_element@1.0", "android.hardware.radio.config@1.0", "android.hardware.radio@1.0", "vendor.qti.hardware.data.connection@1.0", "vendor.qti.hardware.data.connection@1.1", "libsystem_health_mon", "libpdmapper", "libpdnotifier", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpatchcodeid_vendor", "LGDataFeature_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libril-qc-qmi-1.so"],
-			shared_libs: ["libdsutils", "libcutils", "libutils", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libril-qcril-hook-oem", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libmdmdetect", "libperipheral_client", "libsettings", "liblog", "libhidlbase", "vendor.qti.hardware.radio.ims@1.0", "vendor.qti.hardware.radio.qcrilhook@1.0", "vendor.qti.hardware.radio.am@1.0", "vendor.qti.hardware.radio.qtiradio@1.0", "vendor.qti.hardware.radio.uim_remote_server@1.0", "vendor.qti.hardware.radio.uim_remote_client@1.0", "vendor.qti.hardware.radio.lpa@1.0", "vendor.qti.hardware.radio.uim@1.0", "vendor.qti.hardware.radio.uim@1.1", "android.hardware.secure_element@1.0", "android.hardware.radio.config@1.0", "android.hardware.radio@1.0", "vendor.qti.hardware.data.connection@1.0", "vendor.qti.hardware.data.connection@1.1", "libsystem_health_mon", "libpdmapper", "libpdnotifier", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpatchcodeid_vendor", "LGDataFeature_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libdsutils", "libcutils", "libutils", "libril", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libril-qcril-hook-oem", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libmdmdetect", "libperipheral_client", "libsettings", "liblog", "libhidlbase", "vendor.qti.hardware.radio.ims@1.0", "vendor.qti.hardware.radio.qcrilhook@1.0", "vendor.qti.hardware.radio.am@1.0", "vendor.qti.hardware.radio.qtiradio@1.0", "vendor.qti.hardware.radio.uim_remote_server@1.0", "vendor.qti.hardware.radio.uim_remote_client@1.0", "vendor.qti.hardware.radio.lpa@1.0", "vendor.qti.hardware.radio.uim@1.0", "vendor.qti.hardware.radio.uim@1.1", "android.hardware.secure_element@1.0", "android.hardware.radio.config@1.0", "android.hardware.radio@1.0", "vendor.qti.hardware.data.connection@1.0", "vendor.qti.hardware.data.connection@1.1", "libsystem_health_mon", "libpdmapper", "libpdnotifier", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpatchcodeid_vendor", "LGDataFeature_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -3935,15 +3933,14 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libril-qcril-hook-oem.so"],
-			shared_libs: ["libcutils", "libutils", "libdiag", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libutils", "libril", "libdiag", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libril-qcril-hook-oem.so"],
-			shared_libs: ["libcutils", "libutils", "libdiag", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libutils", "libril", "libdiag", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -4965,15 +4962,14 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvss_resim_core.so"],
-			shared_libs: ["libril-qc-qmi-1", "libqmi_cci", "libvss_resim_idl", "liblog", "libvss_resim_iface", "libqmi_encdec", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libril-qc-qmi-1", "libqmi_cci", "libvss_resim_idl", "liblog", "libril", "libvss_resim_iface", "libqmi_encdec", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvss_resim_core.so"],
-			shared_libs: ["libril-qc-qmi-1", "libqmi_cci", "libvss_resim_idl", "liblog", "libvss_resim_iface", "libqmi_encdec", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libril-qc-qmi-1", "libqmi_cci", "libvss_resim_idl", "liblog", "libril", "libvss_resim_iface", "libqmi_encdec", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
