@@ -17919,34 +17919,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifi.wifilearner@1.0",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.ant@1.0",
     owner: "lge",
     strip: {
@@ -21204,36 +21176,6 @@ cc_prebuilt_binary {
                 "libqdMetaData",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wifilearner",
-    owner: "lge",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wifilearner",
-            ],
-            shared_libs: [
-                "vendor.qti.hardware.wifi.wifilearner@1.0",
-                "libbase",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libnl",
-                "libc",
-                "libc++",
                 "libm",
                 "libdl",
             ],
